@@ -7,15 +7,11 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        int number2 = number;
-        int terseded=0;
-        while(number>0){
-            terseded=(number%10)+terseded*10;
-            number=number/10;
-
+        if (number%2==0){
+            System.out.println(number);
+        }else{
+            System.out.println(number*2);
         }
-        String s = terseded == number2 ? "this is polindrom" : "this is not polindrom";
-        System.out.println(s);
 
 
 
